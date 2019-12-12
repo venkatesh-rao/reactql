@@ -1,40 +1,35 @@
 {
-  "name": "root",
-  "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
+  "name": "code-react-graphql",
+  "version": "1.0.0",
+  "description": "Quickly create a boilerplate with react and apollo graphql",
+  "main": "src/index.js",
+  "bin": "src/index.js",
   "scripts": {
-    "start": "lerna run --parallel --scope={server,web-app} start",
-    "build": "lerna run build",
-    "serve": "lerna run serve"
+    "start": "node src/index.js"
   },
-  "devDependencies": {
-    "eslint": "^6.7.2",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-import": "^2.19.1",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.17.0",
-    "husky": "^3.1.0",
-    "lerna": "^3.19.0",
-    "lint-staged": "^9.5.0",
-    "prettier": "^1.19.1"
+  "keywords": [
+    "boilerplate",
+    "apollo server",
+    "graphql",
+    "react",
+    "react bolierplate",
+    "graphql bolierplate"
+  ],
+  "author": "Venkatesh Rao",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "ejs": "^3.0.1",
+    "inquirer": "^7.0.0",
+    "shelljs": "^0.8.3",
+    "yargs": "^15.0.2"
   },
-  "lint-staged": {
-    "*.+(js|jsx)": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.+(json|css|md)": [
-      "prettier --write",
-      "git add"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/venkatesh-rao/reactql.git"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  }
+  "bugs": {
+    "url": "https://github.com/venkatesh-rao/reactql/issues"
+  },
+  "homepage": "https://github.com/venkatesh-rao/reactql#readme"
 }
