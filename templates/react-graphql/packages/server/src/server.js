@@ -45,5 +45,5 @@ server.applyMiddleware({ app });
 
 app.listen({ port: 8000 }, () =>
   // eslint-disable-next-line no-console
-  console.log(`🚀 Server ready at http://localhost:8080${server.graphqlPath}`)
+  console.log(`🚀 Server ready at http://localhost:8000${server.graphqlPath}`)
 );
