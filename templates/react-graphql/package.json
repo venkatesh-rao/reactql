@@ -9,7 +9,10 @@
   "scripts": {
     "start": "lerna run --parallel --scope={server,web-app} start",
     "build": "lerna run build",
-    "serve": "lerna run serve"
+    "serve": "lerna run serve",
+    "lint": "eslint \"*.+(js|jsx)\"",
+    "lint:fix": "eslint --fix \"*.+(js|jsx)\"",
+    "format": "prettier --write \"*.+(json|css|md)\""
   },
   "devDependencies": {
     "eslint": "^6.7.2",
