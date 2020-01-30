@@ -1,6 +1,6 @@
 {
   "name": "code-react-graphql",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quickly create a boilerplate with react and apollo graphql",
   "main": "src/index.js",
   "bin": "src/index.js",
